@@ -1,10 +1,8 @@
-# Getting Started with Create React App
+lien vers la todoList : https://628162ccf1045a01c8fc8644--endearing-semolina-9e6637.netlify.app/
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# TodoList :
 
-## Available Scripts
-
-In the project directory, you can run:
+Premier petite app react en utilisant useState et useEffect. 
 
 ### `npm start`
 
