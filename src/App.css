@@ -8,7 +8,8 @@
   min-height: 100%;
   display: flex;
   justify-content: center;
-  align-items: center;
+  margin-top: 5%;
+  
 }
 
 .app-wrapper {
@@ -26,6 +27,11 @@
   color: #fff;
   text-align: center;
   margin: 30px;
+}
+.form-input {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 30px;
 }
 .task-input {
   outline: none;
@@ -54,6 +60,10 @@
   border-radius: 10px;
   padding: 10px;
   max-height: 30px;
+  justify-content: space-between;
+}
+i {
+  font-size: 25px;
 }
 .button-complete,
 .button-delete,
@@ -73,13 +83,17 @@
   color: #e2d029;
   margin-right: 10px;
 }
+.button-check {
+  color: green;
+  margin-right: 10px;
+}
 .button-delete {
   color: red;
 }
 .complete {
   text-decoration-style: solid;
   text-decoration-line: line-through;
-  text-decoration-color: violet;
+  text-decoration-color: red;
   opacity: 0.6;
 }
 .list {

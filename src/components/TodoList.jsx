@@ -1,10 +1,11 @@
 import React from "react";
 
+
 const TodoList = ({ todos, setTodos, setEditTodo }) => {
 
   const handleDelete = (id) => {
     const todoListCopy = [...todos];
-    const todoFiltered = todoListCopy.filter((ing) => ing.id !== id);
+    const todoFiltered = todoListCopy.filter((todo) => todo.id !== id);
     setTodos(todoFiltered);
   };
 
@@ -29,11 +30,11 @@ const TodoList = ({ todos, setTodos, setEditTodo }) => {
           <p className={`list ${todo.completed ? "complete" : ""}`}>
              {todo.title}
           </p>
-          <div>
-            <button className="button-check" onClick={() => handleCheck(todo.id)}>Check</button>
-            <button className="button-delete" onClick={() => handleDelete(todo.id)}>X</button>
-            <button className="button-edit" onClick={()=>handleEdit(todo.id)}>Edit</button>
-          </div>
+          <div className="list-icons">
+            <i class="fa-solid fa-circle-check button-check" onClick={() => handleCheck(todo.id)}></i>
+            <i class="fa-solid fa-pen-to-square button-edit" onClick={()=>handleEdit(todo.id)}></i>
+            <i class="fa-solid fa-trash button-delete" onClick={() => handleDelete(todo.id)}></i>
+        </div>
         </li>
       ))}
 
